@@ -11,11 +11,13 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.util.Log;
 
 import java.util.concurrent.Callable;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
+    private static final String TAG = "My Info";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +36,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 TextView text = findViewById(R.id.textView2);
                 if (isChecked) {
                     text.setText(buttonView.getText() + "Check");
+                    Log.i(TAG,buttonView.getText() + "Check");
                 } else {
                     text.setText(buttonView.getText() + "UnCheck");
+                    Log.i(TAG,buttonView.getText() + "UnCheck");
                 }
+
             }
         });
         chB.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -46,8 +51,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 TextView text = findViewById(R.id.textView2);
                 if (isChecked) {
                     text.setText(buttonView.getText() + "Check");
+                    Log.i(TAG,buttonView.getText() + "Check");
                 } else {
                     text.setText(buttonView.getText() + "UnCheck");
+                    Log.i(TAG,buttonView.getText() + "UnCheck");
                 }
             }
         });
@@ -59,10 +66,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.button:
                 TextView text = findViewById((R.id.textView));
                 text.setText("hello");
+                Log.i(TAG,"say hello");
                 break;
             case R.id.switch1:
                 ImageView img = findViewById((R.id.imageView));
                 img.setVisibility(View.VISIBLE);
+                Log.i(TAG,"show star");
                 break;
             default:
                 break;
