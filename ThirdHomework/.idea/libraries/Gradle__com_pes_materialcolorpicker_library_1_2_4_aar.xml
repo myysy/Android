@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.pes.materialcolorpicker:library:1.2.4@aar">
     <CLASSES>
-      <root url="jar://E:/Android/.gradle/caches/transforms-2/files-2.1/2fb49596547326ed4ebbbadec2a88c26/library-1.2.4/jars/classes.jar!/" />
-      <root url="file://E:/Android/.gradle/caches/transforms-2/files-2.1/2fb49596547326ed4ebbbadec2a88c26/library-1.2.4/res" />
+      <root url="jar://E:/Android/.gradle/caches/transforms-2/files-2.1/aba7fc0974b566edffff950203c867f3/library-1.2.4/jars/classes.jar!/" />
+      <root url="file://E:/Android/.gradle/caches/transforms-2/files-2.1/aba7fc0974b566edffff950203c867f3/library-1.2.4/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://E:/Android/.gradle/caches/modules-2/files-2.1/com.pes.materialcolorpicker/library/1.2.4/a2b4825ae1e095634a5b275e8bf23c323dad5ce7/library-1.2.4-javadoc.jar!/" />
