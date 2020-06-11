@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.VideoFragment">
+
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+        android:id="@+id/videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.final_work.widget.LikeLayout
+        android:id="@+id/likeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/videoPlayer"
+        android:layout_alignEnd="@id/likeLayout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/nickname"
+            android:textColor="@color/white">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/description">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <com.like.LikeButton
+            android:id="@+id/likeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon_size="25dp"
+            app:icon_type="heart"
+            app:is_enabled="true"
+            app:like_drawable="@mipmap/ic_heart_on"
+            app:unlike_drawable="@mipmap/ic_heart_off" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/likecount">
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
