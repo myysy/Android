@@ -8,9 +8,9 @@
 
 - 实现效果图
 
-  ![](https://github.com/myysy/Android/tree/master/Final_work/1.gif)
+  ![Alt Text](https://github.com/myysy/Android/tree/master/Final_work/1.gif)
 
-  ![](https://github.com/myysy/Android/tree/master/Final_work/2.gif)
+  ![Alt Text](https://github.com/myysy/Android/tree/master/Final_work/2.gif)
 
 - 实现的APK在本目录下的homework.apk
 
